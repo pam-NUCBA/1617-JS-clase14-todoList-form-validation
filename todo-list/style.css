@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Permanent+Marker&display=swap");
+@font-face {
+  font-family: fontAwesome;
+  src: url("./assets/fonts/fontawesome-free-5.15.4-web/webfonts/fa-solid-900.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  padding: 2%;
+  height: 100vh;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1, h2 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+main {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4%;
+  padding: 3% 4%;
+}
+
+main button {
+  background-color: #ce6979;
+  border: #ce6979 2px solid;
+  color: #f9f3ed;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 1%;
+}
+
+main button:hover {
+  cursor: pointer;
+  background-color: #ffa2b2;
+  border: #ffa2b2 2px solid;
+}
+
+main button.add::before {
+  font-family: "fontAwesome";
+  content: "\f055";
+}
+
+main button.edit::before {
+  font-family: "fontAwesome";
+  content: "\f044";
+}
+
+main button.scrap::before {
+  font-family: "fontAwesome";
+  content: "\f058";
+}
+
+main button.erase::before {
+  font-family: "fontAwesome";
+  content: "\f12d";
+}
+
+main button.save::before {
+  font-family: "fontAwesome";
+  content: "\f0c7";
+}
+
+main button.notDone::before {
+  font-family: "fontAwesome";
+  content: "\f057";
+}
+
+main input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #f9f3ed;
+  border: #8cb6a6 2px solid;
+  margin-bottom: 1%;
+}
+
+main .emptyAlert {
+  padding: 2%;
+}
+
+main .hidden {
+  visibility: hidden;
+}
+
+main .tasksSection {
+  margin-top: 5%;
+}
+
+main .tasksSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .tasksSection .taskInput {
+  color: grey;
+  cursor: auto;
+}
+
+main .tasksSection .taskInput:not(:-moz-read-only) {
+  cursor: text;
+  color: #8cb6a6;
+  font-weight: 800;
+}
+
+main .tasksSection .taskInput:not(:read-only) {
+  cursor: text;
+  color: #8cb6a6;
+  font-weight: 800;
+}
+
+main .tasksSection .taskInput.done {
+  text-decoration: line-through;
+}
+
+main .tasksSection .btns {
+  width: 30%;
+}
+/*# sourceMappingURL=style.css.map */
